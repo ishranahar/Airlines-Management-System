@@ -1,103 +1,134 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace US_Bangla_Airline_Management_App
 {
     public partial class regis : Form
     {
+        // 🔗 Database connection string
+        string connectionString =
+            @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=US-BanglaAirlineDB;Integrated Security=True";
+
         public regis()
         {
             InitializeComponent();
+            LoadRole();
         }
 
-        private void Fname_Click(object sender, EventArgs e)
+        // 🔹 Load Role into ComboBox
+        private void LoadRole()
         {
+            RegisFormRoleComBox.Items.Clear();
+            RegisFormRoleComBox.Items.Add("Admin");
+            RegisFormRoleComBox.Items.Add("Customer");
+            RegisFormRoleComBox.Items.Add("Staff");
+            RegisFormRoleComBox.SelectedIndex = 0;
+        }
+        // ===== AUTO-GENERATED EVENT PATCH METHODS =====
+        // These methods exist only to satisfy Designer.cs references
 
+        private void FullName_Click(object sender, EventArgs e)
+        {
+            // No action needed
         }
 
-        private void Gender_Click(object sender, EventArgs e)
+        private void RegisFormUserNameTxtBox_TextChanged(object sender, EventArgs e)
         {
-
+            // No action needed
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-
+            // No action needed
         }
+        // ===== QUICK PATCH FOR DESIGNER EVENT =====
 
- 
-        private void signup_MouseClick(object sender, MouseEventArgs e)
-        {
-            LogInForm If = new LogInForm();
-            If.Show();
-            this.Hide();
-        }
+       
+        // ===== QUICK PATCH FOR CANCEL BUTTON EVENT =====
 
         private void Cancel_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            // No action needed
         }
 
+
+
+
+
+        // 🔹 SIGN UP BUTTON CLICK
         private void signup_Click(object sender, EventArgs e)
         {
-            string connection =
-                @"Data Source=(LocalDB)\MSSQLLocalDB;
-                  AttachDbFilename=D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\regisdata.mdf;
-                  Integrated Security=True;
-                  Connect Timeout=30";
+            // 🔍 Basic validation
+            if (RegisFormIDTxtForm.Text == "" ||
+                RegisFormUserNameTxtBox.Text == "" ||
+                RegisFormPasswordTxtBox.Text == "" ||
+                RegisFormRoleComBox.SelectedIndex == -1)
+            {
+                MessageBox.Show("All fields are required!");
+                return;
+            }
 
             try
             {
-                using (SqlConnection conn = new SqlConnection(connection))
+                SqlConnection con = new SqlConnection(connectionString);
+                con.Open();
+
+                // ✅ STEP 1: CHECK UNIQUE ID
+                string checkQuery = "SELECT COUNT(*) FROM UserTable WHERE ID = @ID";
+                SqlCommand checkCmd = new SqlCommand(checkQuery, con);
+                checkCmd.Parameters.AddWithValue("@ID", RegisFormIDTxtForm.Text);
+
+                int count = (int)checkCmd.ExecuteScalar();
+
+                if (count > 0)
                 {
-                    conn.Open();
-
-                    SqlCommand sq = new SqlCommand(
-                        "INSERT INTO userInfo (FullName, Email, Npass) VALUES (@FullName, @Email, @Npass)",
-                        conn
-                    );
-
-                    sq.Parameters.AddWithValue("@FullName", textBox1.Text); // Full Name
-                    sq.Parameters.AddWithValue("@Email", textBox4.Text);    // Email
-                    sq.Parameters.AddWithValue("@Npass", textBox5.Text);    // New Password
-
-                    int rows = sq.ExecuteNonQuery();
-                    MessageBox.Show("Rows inserted = " + rows);
+                    MessageBox.Show("This ID already exists. Please use a different ID.");
+                    con.Close();
+                    return;
                 }
 
-                MessageBox.Show("User added successfully");
+                // ✅ STEP 2: INSERT DATA
+                string insertQuery =
+                    "INSERT INTO UserTable (ID, UserName, Password, Role, Status) " +
+                    "VALUES (@ID, @UserName, @Password, @Role, @Status)";
 
-                LogInForm lf = new LogInForm();
-                lf.Show();
+                SqlCommand cmd = new SqlCommand(insertQuery, con);
+                cmd.Parameters.AddWithValue("@ID", Convert.ToInt32(RegisFormIDTxtForm.Text));
+                cmd.Parameters.AddWithValue("@UserName", RegisFormUserNameTxtBox.Text);
+                cmd.Parameters.AddWithValue("@Password", RegisFormPasswordTxtBox.Text);
+                cmd.Parameters.AddWithValue("@Role", RegisFormRoleComBox.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@Status", 1); // 1 = Active
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Sign Up Successful!");
+
+                con.Close();
+
+                // 🔁 Redirect to Login
                 this.Hide();
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show("SQL error: " + ex.Message);
+                LogInForm login = new LogInForm();
+                login.Show();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Other error: " + ex.Message);
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        // 🔹 CANCEL BUTTON
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
-        private void LogInFormCmb_SelectedIndexChanged(object sender, EventArgs e)
+        // 🔹 LOGIN NOW BUTTON
+        private void btnLoginNow_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            LogInForm login = new LogInForm();
+            login.Show();
         }
     }
 }

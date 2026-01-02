@@ -34,8 +34,6 @@ namespace US_Bangla_Airline_Management_App
             this.LogInFormUserNameTextBox = new System.Windows.Forms.TextBox();
             this.LogInFormPassTxtBox = new System.Windows.Forms.TextBox();
             this.LogInFormPassLabel = new System.Windows.Forms.Label();
-            this.LogInFormCmb = new System.Windows.Forms.ComboBox();
-            this.LogInFormRoleLabel = new System.Windows.Forms.Label();
             this.LogInButton = new System.Windows.Forms.Button();
             this.LogInFormPictureBox = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -81,7 +79,7 @@ namespace US_Bangla_Airline_Management_App
             // 
             this.LogInFormPassTxtBox.BackColor = System.Drawing.Color.Silver;
             this.LogInFormPassTxtBox.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.LogInFormPassTxtBox.Location = new System.Drawing.Point(427, 150);
+            this.LogInFormPassTxtBox.Location = new System.Drawing.Point(427, 164);
             this.LogInFormPassTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogInFormPassTxtBox.Multiline = true;
             this.LogInFormPassTxtBox.Name = "LogInFormPassTxtBox";
@@ -93,48 +91,19 @@ namespace US_Bangla_Airline_Management_App
             this.LogInFormPassLabel.AutoSize = true;
             this.LogInFormPassLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogInFormPassLabel.ForeColor = System.Drawing.Color.Gray;
-            this.LogInFormPassLabel.Location = new System.Drawing.Point(301, 150);
+            this.LogInFormPassLabel.Location = new System.Drawing.Point(301, 163);
             this.LogInFormPassLabel.Name = "LogInFormPassLabel";
             this.LogInFormPassLabel.Size = new System.Drawing.Size(94, 22);
             this.LogInFormPassLabel.TabIndex = 4;
             this.LogInFormPassLabel.Text = "Password:";
             this.LogInFormPassLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // LogInFormCmb
-            // 
-            this.LogInFormCmb.BackColor = System.Drawing.Color.Silver;
-            this.LogInFormCmb.ForeColor = System.Drawing.SystemColors.Info;
-            this.LogInFormCmb.FormattingEnabled = true;
-            this.LogInFormCmb.Items.AddRange(new object[] {
-            "Admin",
-            "Normal Customer",
-            "Premium Customer",
-            "Counter Staff"});
-            this.LogInFormCmb.Location = new System.Drawing.Point(427, 199);
-            this.LogInFormCmb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LogInFormCmb.Name = "LogInFormCmb";
-            this.LogInFormCmb.Size = new System.Drawing.Size(176, 24);
-            this.LogInFormCmb.TabIndex = 6;
-            this.LogInFormCmb.Text = "Select";
-            // 
-            // LogInFormRoleLabel
-            // 
-            this.LogInFormRoleLabel.AutoSize = true;
-            this.LogInFormRoleLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogInFormRoleLabel.ForeColor = System.Drawing.Color.Gray;
-            this.LogInFormRoleLabel.Location = new System.Drawing.Point(331, 201);
-            this.LogInFormRoleLabel.Name = "LogInFormRoleLabel";
-            this.LogInFormRoleLabel.Size = new System.Drawing.Size(54, 22);
-            this.LogInFormRoleLabel.TabIndex = 7;
-            this.LogInFormRoleLabel.Text = "Role:";
-            this.LogInFormRoleLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // LogInButton
             // 
             this.LogInButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LogInButton.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogInButton.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.LogInButton.Location = new System.Drawing.Point(305, 259);
+            this.LogInButton.Location = new System.Drawing.Point(305, 208);
             this.LogInButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogInButton.Name = "LogInButton";
             this.LogInButton.Size = new System.Drawing.Size(298, 37);
@@ -159,7 +128,7 @@ namespace US_Bangla_Airline_Management_App
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.button1.Location = new System.Drawing.Point(305, 340);
+            this.button1.Location = new System.Drawing.Point(318, 329);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(298, 36);
@@ -173,7 +142,7 @@ namespace US_Bangla_Airline_Management_App
             this.acc.AutoSize = true;
             this.acc.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.acc.ForeColor = System.Drawing.Color.Gray;
-            this.acc.Location = new System.Drawing.Point(380, 310);
+            this.acc.Location = new System.Drawing.Point(378, 293);
             this.acc.Name = "acc";
             this.acc.Size = new System.Drawing.Size(161, 17);
             this.acc.TabIndex = 12;
@@ -190,8 +159,6 @@ namespace US_Bangla_Airline_Management_App
             this.Controls.Add(this.button1);
             this.Controls.Add(this.LogInFormPictureBox);
             this.Controls.Add(this.LogInButton);
-            this.Controls.Add(this.LogInFormRoleLabel);
-            this.Controls.Add(this.LogInFormCmb);
             this.Controls.Add(this.LogInFormPassTxtBox);
             this.Controls.Add(this.LogInFormPassLabel);
             this.Controls.Add(this.LogInFormUserNameTextBox);
@@ -212,8 +179,6 @@ namespace US_Bangla_Airline_Management_App
         private System.Windows.Forms.TextBox LogInFormUserNameTextBox;
         private System.Windows.Forms.TextBox LogInFormPassTxtBox;
         private System.Windows.Forms.Label LogInFormPassLabel;
-        private System.Windows.Forms.ComboBox LogInFormCmb;
-        private System.Windows.Forms.Label LogInFormRoleLabel;
         private System.Windows.Forms.Button LogInButton;
         private System.Windows.Forms.PictureBox LogInFormPictureBox;
         private System.Windows.Forms.Button button1;
