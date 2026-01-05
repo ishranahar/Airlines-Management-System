@@ -62,14 +62,15 @@ namespace US_Bangla_Airline_Management_App
                     conn.Open();
 
                     SqlCommand sq = new SqlCommand(
-                        "INSERT INTO userInfo (FullName, Email, Npass) VALUES (@FullName, @Email, @Npass)",
+                        "INSERT INTO userInfo (FullName, Email, password) VALUES (@FullName, @Email, @Npass)",
                         conn
                     );
 
                     sq.Parameters.AddWithValue("@FullName", textBox1.Text); // Full Name
+                  //  sq.Parameters.AddWithValue("@user", user.Text);
                     sq.Parameters.AddWithValue("@Email", textBox4.Text);    // Email
-                    sq.Parameters.AddWithValue("@Npass", textBox5.Text);    // New Password
-
+                    sq.Parameters.AddWithValue("@Npass", textBox5.Text);  // New Password   
+                   // sq.Parameters.AddWithValue("@rolecmb", rolecmb.Text);
                     int rows = sq.ExecuteNonQuery();
                     MessageBox.Show("Rows inserted = " + rows);
                 }
@@ -96,6 +97,16 @@ namespace US_Bangla_Airline_Management_App
         }
 
         private void LogInFormCmb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LogInFormCmb_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }
