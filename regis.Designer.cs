@@ -40,11 +40,11 @@ namespace US_Bangla_Airline_Management_App
             this.Role = new System.Windows.Forms.Label();
             this.copyright = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.user = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.LogInFormCmb = new System.Windows.Forms.ComboBox();
+            this.rolecmb = new System.Windows.Forms.ComboBox();
             this.signup = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -158,13 +158,14 @@ namespace US_Bangla_Airline_Management_App
             this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 17;
             // 
-            // textBox2
+            // user
             // 
-            this.textBox2.Location = new System.Drawing.Point(232, 214);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 22);
-            this.textBox2.TabIndex = 18;
+            this.user.Location = new System.Drawing.Point(232, 214);
+            this.user.Margin = new System.Windows.Forms.Padding(4);
+            this.user.Name = "user";
+            this.user.Size = new System.Drawing.Size(132, 22);
+            this.user.TabIndex = 18;
+            this.user.TextChanged += new System.EventHandler(this.textBox2_TextChanged_1);
             // 
             // textBox3
             // 
@@ -191,22 +192,23 @@ namespace US_Bangla_Airline_Management_App
             this.textBox5.TabIndex = 21;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
-            // LogInFormCmb
+            // rolecmb
             // 
-            this.LogInFormCmb.BackColor = System.Drawing.Color.Silver;
-            this.LogInFormCmb.ForeColor = System.Drawing.SystemColors.Info;
-            this.LogInFormCmb.FormattingEnabled = true;
-            this.LogInFormCmb.Items.AddRange(new object[] {
+            this.rolecmb.BackColor = System.Drawing.Color.Silver;
+            this.rolecmb.ForeColor = System.Drawing.SystemColors.Info;
+            this.rolecmb.FormattingEnabled = true;
+            this.rolecmb.Items.AddRange(new object[] {
             "Admin",
             "Normal Customer",
             "Premium Customer",
             "Counter Staff"});
-            this.LogInFormCmb.Location = new System.Drawing.Point(232, 406);
-            this.LogInFormCmb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LogInFormCmb.Name = "LogInFormCmb";
-            this.LogInFormCmb.Size = new System.Drawing.Size(176, 24);
-            this.LogInFormCmb.TabIndex = 22;
-            this.LogInFormCmb.Text = "Select";
+            this.rolecmb.Location = new System.Drawing.Point(232, 406);
+            this.rolecmb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rolecmb.Name = "rolecmb";
+            this.rolecmb.Size = new System.Drawing.Size(176, 24);
+            this.rolecmb.TabIndex = 22;
+            this.rolecmb.Text = "Select";
+            this.rolecmb.SelectedIndexChanged += new System.EventHandler(this.LogInFormCmb_SelectedIndexChanged_1);
             // 
             // signup
             // 
@@ -240,11 +242,11 @@ namespace US_Bangla_Airline_Management_App
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.signup);
-            this.Controls.Add(this.LogInFormCmb);
+            this.Controls.Add(this.rolecmb);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.user);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.copyright);
             this.Controls.Add(this.Role);
@@ -277,11 +279,11 @@ namespace US_Bangla_Airline_Management_App
         private System.Windows.Forms.Label Role;
         private System.Windows.Forms.Label copyright;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox user;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.ComboBox LogInFormCmb;
+        private System.Windows.Forms.ComboBox rolecmb;
         private System.Windows.Forms.Button signup;
         private System.Windows.Forms.Button Cancel;
     }

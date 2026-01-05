@@ -32,7 +32,6 @@ D:\US-Bangla-Airline-Management-App-main\obj\Debug\US-Bangla Airline Management 
 D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\obj\Debug\US-Bangla Airline Management App.csproj.AssemblyReference.cache
 D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\obj\Debug\US_Bangla_Airline_Management_App.LogInForm.resources
 D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\obj\Debug\US_Bangla_Airline_Management_App.Properties.Resources.resources
-D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\obj\Debug\US_Bangla_Airline_Management_App.regis.resources
 D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\obj\Debug\US-Bangla Airline Management App.csproj.GenerateResource.cache
 D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\obj\Debug\US-Bangla Airline Management App.csproj.CoreCompileInputs.cache
 D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\obj\Debug\US-Bangla Airline Management App.exe
@@ -40,4 +39,4 @@ D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\obj\De
 D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\bin\Debug\US-Bangla Airline Management App.exe.config
 D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\bin\Debug\US-Bangla Airline Management App.exe
 D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\bin\Debug\US-Bangla Airline Management App.pdb
-D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\obj\Debug\US_Bangla_Airline_Management_App.BookFlight.resources
+D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\obj\Debug\US_Bangla_Airline_Management_App.BookingFlight.resources
