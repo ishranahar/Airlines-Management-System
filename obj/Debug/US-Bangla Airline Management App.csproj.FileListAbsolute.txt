@@ -41,5 +41,5 @@ D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\bin\De
 D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\bin\Debug\US-Bangla Airline Management App.exe
 D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\bin\Debug\US-Bangla Airline Management App.pdb
 D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\obj\Debug\US_Bangla_Airline_Management_App.BookFlight.resources
-E:\Desktop\AIUB\FALL25-26\OOP-2\FT\Project Doc\Main Project\US-Bangla-Airline-Management-App\obj\Debug\US_Bangla_Airline_Management_App.BookFlight.resources
-E:\Desktop\AIUB\FALL25-26\OOP-2\FT\Project Doc\Main Project\US-Bangla-Airline-Management-App\obj\Debug\US_Bangla_Airline_Management_App.regis.resources
+E:\Desktop\AIUB\FALL25-26\OOP-2\FT\Project Doc\Main Project\US-Bangla-Airline-Management-App\obj\Debug\US_Bangla_Airline_Management_App.AdminDashboard.resources
+E:\Desktop\AIUB\FALL25-26\OOP-2\FT\Project Doc\Main Project\US-Bangla-Airline-Management-App\obj\Debug\US_Bangla_Airline_Management_App.AllUsers.resources

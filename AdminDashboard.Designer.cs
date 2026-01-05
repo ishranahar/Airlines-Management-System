@@ -82,6 +82,7 @@ namespace US_Bangla_Airline_Management_App
             this.AdminDashBoardUserList.TabIndex = 4;
             this.AdminDashBoardUserList.Text = "User List";
             this.AdminDashBoardUserList.UseVisualStyleBackColor = true;
+            this.AdminDashBoardUserList.MouseClick += new System.Windows.Forms.MouseEventHandler(this.UserListAction);
             // 
             // AdminDashBoardTitleLabel
             // 

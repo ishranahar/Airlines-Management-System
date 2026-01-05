@@ -110,6 +110,7 @@ namespace US_Bangla_Airline_Management_App
                 this.Hide();
                 LogInForm login = new LogInForm();
                 login.Show();
+               
             }
             catch (Exception ex)
             {

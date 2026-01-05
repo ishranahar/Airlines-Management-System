@@ -26,5 +26,13 @@ namespace US_Bangla_Airline_Management_App
         {
 
         }
+
+        private void UserListAction(object sender, MouseEventArgs e)
+        {
+            this.Hide();
+            AllUsers AU = new AllUsers();
+            AU.Show();
+
+        }
     }
 }
