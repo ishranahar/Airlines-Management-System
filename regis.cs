@@ -7,8 +7,9 @@ namespace US_Bangla_Airline_Management_App
     public partial class regis : Form
     {
         // 🔗 Database connection string
-        string connectionString =
+       /* string connectionString =
             @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=US-BanglaAirlineDB;Integrated Security=True";
+       */
 
         public regis()
         {
@@ -57,69 +58,40 @@ namespace US_Bangla_Airline_Management_App
 
 
         // 🔹 SIGN UP BUTTON CLICK
-        private void signup_Click(object sender, EventArgs e)
+
+private void signup_Click(object sender, EventArgs e)
+    {
+        
+        int id = Convert.ToInt32(RegisFormIDTxtForm.Text);
+        string username = RegisFormUserNameTxtBox.Text;
+        string password = RegisFormPasswordTxtBox.Text;
+        string role = RegisFormRoleComBox.SelectedItem.ToString();
+
+       
+        if (username == "" || password == "")
         {
-            // 🔍 Basic validation
-            if (RegisFormIDTxtForm.Text == "" ||
-                RegisFormUserNameTxtBox.Text == "" ||
-                RegisFormPasswordTxtBox.Text == "" ||
-                RegisFormRoleComBox.SelectedIndex == -1)
-            {
-                MessageBox.Show("All fields are required!");
-                return;
-            }
-
-            try
-            {
-                SqlConnection con = new SqlConnection(connectionString);
-                con.Open();
-
-                // ✅ STEP 1: CHECK UNIQUE ID
-                string checkQuery = "SELECT COUNT(*) FROM UserTable WHERE ID = @ID";
-                SqlCommand checkCmd = new SqlCommand(checkQuery, con);
-                checkCmd.Parameters.AddWithValue("@ID", RegisFormIDTxtForm.Text);
-
-                int count = (int)checkCmd.ExecuteScalar();
-
-                if (count > 0)
-                {
-                    MessageBox.Show("This ID already exists. Please use a different ID.");
-                    con.Close();
-                    return;
-                }
-
-                // ✅ STEP 2: INSERT DATA
-                string insertQuery =
-                    "INSERT INTO UserTable (ID, UserName, Password, Role, Status) " +
-                    "VALUES (@ID, @UserName, @Password, @Role, @Status)";
-
-                SqlCommand cmd = new SqlCommand(insertQuery, con);
-                cmd.Parameters.AddWithValue("@ID", Convert.ToInt32(RegisFormIDTxtForm.Text));
-                cmd.Parameters.AddWithValue("@UserName", RegisFormUserNameTxtBox.Text);
-                cmd.Parameters.AddWithValue("@Password", RegisFormPasswordTxtBox.Text);
-                cmd.Parameters.AddWithValue("@Role", RegisFormRoleComBox.SelectedItem.ToString());
-                cmd.Parameters.AddWithValue("@Status", 1); // 1 = Active
-
-                cmd.ExecuteNonQuery();
-
-                MessageBox.Show("Sign Up Successful!");
-
-                con.Close();
-
-                // 🔁 Redirect to Login
-                this.Hide();
-                LogInForm login = new LogInForm();
-                login.Show();
-               
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
+            MessageBox.Show("All fields are required!");
+            return;
         }
 
-        // 🔹 CANCEL BUTTON
-        private void btnCancel_Click(object sender, EventArgs e)
+        try
+        {
+            
+            User.CreateUser(id, username, password, role);
+
+            MessageBox.Show("Sign Up Successful!");
+
+            this.Hide();
+            new LogInForm().Show();
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show(ex.Message);
+        }
+    }
+
+    // 🔹 CANCEL BUTTON
+    private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }

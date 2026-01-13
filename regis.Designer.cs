@@ -249,7 +249,7 @@ namespace US_Bangla_Airline_Management_App
             this.Controls.Add(this.RegisFormFullNameLabel);
             this.Controls.Add(this.SignUpLabel);
             this.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "regis";
             this.Text = "regis";

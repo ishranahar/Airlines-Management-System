@@ -43,3 +43,7 @@ D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\bin\De
 D:\AIUB\Fall 25-26\OOP 2\FINAL-TERM\US-Bangla-Airline-Management-App-main\obj\Debug\US_Bangla_Airline_Management_App.BookFlight.resources
 E:\Desktop\AIUB\FALL25-26\OOP-2\FT\Project Doc\Main Project\US-Bangla-Airline-Management-App\obj\Debug\US_Bangla_Airline_Management_App.AdminDashboard.resources
 E:\Desktop\AIUB\FALL25-26\OOP-2\FT\Project Doc\Main Project\US-Bangla-Airline-Management-App\obj\Debug\US_Bangla_Airline_Management_App.AllUsers.resources
+E:\Desktop\AIUB\FALL25-26\OOP-2\FT\Project Doc\Main Project\US-Bangla-Airline-Management-App\obj\Debug\US_Bangla_Airline_Management_App.AllFlights.resources
+E:\Desktop\AIUB\FALL25-26\OOP-2\FT\Project Doc\Main Project\US-Bangla-Airline-Management-App\obj\Debug\US_Bangla_Airline_Management_App.SingleUser.resources
+E:\Desktop\AIUB\FALL25-26\OOP-2\FT\Project Doc\Main Project\US-Bangla-Airline-Management-App\obj\Debug\US_Bangla_Airline_Management_App.AddFlightForm.resources
+E:\Desktop\AIUB\FALL25-26\OOP-2\FT\Project Doc\Main Project\US-Bangla-Airline-Management-App\obj\Debug\US_Bangla_Airline_Management_App.SingleFlightForm.resources

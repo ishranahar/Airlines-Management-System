@@ -35,31 +35,33 @@ namespace US_Bangla_Airline_Management_App
             this.AdminDashboardBackBtn = new System.Windows.Forms.Button();
             this.AdminDashBoardUserList = new System.Windows.Forms.Button();
             this.AdminDashBoardTitleLabel = new System.Windows.Forms.Label();
+            this.AdminDashBoardAircarftListBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AdminDashboardFlightListBtn
             // 
-            this.AdminDashboardFlightListBtn.Location = new System.Drawing.Point(36, 221);
+            this.AdminDashboardFlightListBtn.Location = new System.Drawing.Point(47, 129);
             this.AdminDashboardFlightListBtn.Name = "AdminDashboardFlightListBtn";
-            this.AdminDashboardFlightListBtn.Size = new System.Drawing.Size(198, 65);
+            this.AdminDashboardFlightListBtn.Size = new System.Drawing.Size(345, 86);
             this.AdminDashboardFlightListBtn.TabIndex = 0;
             this.AdminDashboardFlightListBtn.Text = "Flight List";
             this.AdminDashboardFlightListBtn.UseVisualStyleBackColor = true;
+            this.AdminDashboardFlightListBtn.Click += new System.EventHandler(this.AdminDashboardFlightListBtn_Click);
             // 
             // AdminDashBoardFlightBookingListBtn
             // 
-            this.AdminDashBoardFlightBookingListBtn.Location = new System.Drawing.Point(552, 221);
+            this.AdminDashBoardFlightBookingListBtn.Location = new System.Drawing.Point(407, 221);
             this.AdminDashBoardFlightBookingListBtn.Name = "AdminDashBoardFlightBookingListBtn";
-            this.AdminDashBoardFlightBookingListBtn.Size = new System.Drawing.Size(195, 65);
+            this.AdminDashBoardFlightBookingListBtn.Size = new System.Drawing.Size(340, 86);
             this.AdminDashBoardFlightBookingListBtn.TabIndex = 1;
-            this.AdminDashBoardFlightBookingListBtn.Text = "Flight Booking List";
+            this.AdminDashBoardFlightBookingListBtn.Text = "Booking Flights List";
             this.AdminDashBoardFlightBookingListBtn.UseVisualStyleBackColor = true;
             // 
             // AdminDashboardProfileBtn
             // 
             this.AdminDashboardProfileBtn.Location = new System.Drawing.Point(21, 28);
             this.AdminDashboardProfileBtn.Name = "AdminDashboardProfileBtn";
-            this.AdminDashboardProfileBtn.Size = new System.Drawing.Size(135, 54);
+            this.AdminDashboardProfileBtn.Size = new System.Drawing.Size(227, 69);
             this.AdminDashboardProfileBtn.TabIndex = 2;
             this.AdminDashboardProfileBtn.Text = "Profile";
             this.AdminDashboardProfileBtn.UseVisualStyleBackColor = true;
@@ -67,18 +69,19 @@ namespace US_Bangla_Airline_Management_App
             // 
             // AdminDashboardBackBtn
             // 
-            this.AdminDashboardBackBtn.Location = new System.Drawing.Point(350, 359);
+            this.AdminDashboardBackBtn.Location = new System.Drawing.Point(270, 359);
             this.AdminDashboardBackBtn.Name = "AdminDashboardBackBtn";
-            this.AdminDashboardBackBtn.Size = new System.Drawing.Size(109, 44);
+            this.AdminDashboardBackBtn.Size = new System.Drawing.Size(262, 49);
             this.AdminDashboardBackBtn.TabIndex = 3;
             this.AdminDashboardBackBtn.Text = "Back ";
             this.AdminDashboardBackBtn.UseVisualStyleBackColor = true;
+            this.AdminDashboardBackBtn.Click += new System.EventHandler(this.AdminDashboardBackBtn_Click);
             // 
             // AdminDashBoardUserList
             // 
-            this.AdminDashBoardUserList.Location = new System.Drawing.Point(303, 221);
+            this.AdminDashBoardUserList.Location = new System.Drawing.Point(407, 128);
             this.AdminDashBoardUserList.Name = "AdminDashBoardUserList";
-            this.AdminDashBoardUserList.Size = new System.Drawing.Size(190, 65);
+            this.AdminDashBoardUserList.Size = new System.Drawing.Size(340, 87);
             this.AdminDashBoardUserList.TabIndex = 4;
             this.AdminDashBoardUserList.Text = "User List";
             this.AdminDashBoardUserList.UseVisualStyleBackColor = true;
@@ -94,11 +97,22 @@ namespace US_Bangla_Airline_Management_App
             this.AdminDashBoardTitleLabel.TabIndex = 5;
             this.AdminDashBoardTitleLabel.Text = "Admin Dashboard";
             // 
+            // AdminDashBoardAircarftListBtn
+            // 
+            this.AdminDashBoardAircarftListBtn.Location = new System.Drawing.Point(47, 221);
+            this.AdminDashBoardAircarftListBtn.Name = "AdminDashBoardAircarftListBtn";
+            this.AdminDashBoardAircarftListBtn.Size = new System.Drawing.Size(345, 86);
+            this.AdminDashBoardAircarftListBtn.TabIndex = 6;
+            this.AdminDashBoardAircarftListBtn.Text = "Aircraft List";
+            this.AdminDashBoardAircarftListBtn.UseVisualStyleBackColor = true;
+            this.AdminDashBoardAircarftListBtn.Click += new System.EventHandler(this.AdminDashBoardAircarftListBtn_Click);
+            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.AdminDashBoardAircarftListBtn);
             this.Controls.Add(this.AdminDashBoardTitleLabel);
             this.Controls.Add(this.AdminDashBoardUserList);
             this.Controls.Add(this.AdminDashboardBackBtn);
@@ -120,5 +134,6 @@ namespace US_Bangla_Airline_Management_App
         private System.Windows.Forms.Button AdminDashboardBackBtn;
         private System.Windows.Forms.Button AdminDashBoardUserList;
         private System.Windows.Forms.Label AdminDashBoardTitleLabel;
+        private System.Windows.Forms.Button AdminDashBoardAircarftListBtn;
     }
 }

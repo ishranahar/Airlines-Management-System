@@ -34,5 +34,26 @@ namespace US_Bangla_Airline_Management_App
             AU.Show();
 
         }
+
+        private void AdminDashBoardAircarftListBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminDashboardFlightListBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AllFlights AF = new AllFlights();
+            AF.Show();
+
+        }
+
+        private void AdminDashboardBackBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LogInForm LF = new LogInForm();
+            LF.Show();
+
+        }
     }
 }
