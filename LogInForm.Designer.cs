@@ -1,17 +1,9 @@
-﻿
-namespace US_Bangla_Airline_Management_App
+﻿namespace US_Bangla_Airline_Management_App
 {
     partial class LogInForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -23,157 +15,159 @@ namespace US_Bangla_Airline_Management_App
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.LogInFormHeaderLabel = new System.Windows.Forms.Label();
-            this.LogInFormUserNameLabel = new System.Windows.Forms.Label();
-            this.LogInFormUserNameTextBox = new System.Windows.Forms.TextBox();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.acc = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.LogInButton = new System.Windows.Forms.Button();
             this.LogInFormPassTxtBox = new System.Windows.Forms.TextBox();
             this.LogInFormPassLabel = new System.Windows.Forms.Label();
-            this.LogInButton = new System.Windows.Forms.Button();
+            this.LogInFormUserNameTextBox = new System.Windows.Forms.TextBox();
+            this.LogInFormUserNameLabel = new System.Windows.Forms.Label();
+            this.LogInFormHeaderLabel = new System.Windows.Forms.Label();
             this.LogInFormPictureBox = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.acc = new System.Windows.Forms.Label();
+            this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogInFormPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // LogInFormHeaderLabel
+            // panelMain
             // 
-            this.LogInFormHeaderLabel.AutoSize = true;
-            this.LogInFormHeaderLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LogInFormHeaderLabel.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogInFormHeaderLabel.Location = new System.Drawing.Point(388, 21);
-            this.LogInFormHeaderLabel.Name = "LogInFormHeaderLabel";
-            this.LogInFormHeaderLabel.Size = new System.Drawing.Size(133, 45);
-            this.LogInFormHeaderLabel.TabIndex = 1;
-            this.LogInFormHeaderLabel.Text = "Log In";
+            this.panelMain.BackColor = System.Drawing.Color.Linen;
+            this.panelMain.Controls.Add(this.acc);
+            this.panelMain.Controls.Add(this.button1);
+            this.panelMain.Controls.Add(this.LogInButton);
+            this.panelMain.Controls.Add(this.LogInFormPassTxtBox);
+            this.panelMain.Controls.Add(this.LogInFormPassLabel);
+            this.panelMain.Controls.Add(this.LogInFormUserNameTextBox);
+            this.panelMain.Controls.Add(this.LogInFormUserNameLabel);
+            this.panelMain.Controls.Add(this.LogInFormHeaderLabel);
+            this.panelMain.Location = new System.Drawing.Point(120, 100);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(432, 361);
+            this.panelMain.TabIndex = 0;
             // 
-            // LogInFormUserNameLabel
+            // acc
             // 
-            this.LogInFormUserNameLabel.AutoSize = true;
-            this.LogInFormUserNameLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogInFormUserNameLabel.ForeColor = System.Drawing.Color.Gray;
-            this.LogInFormUserNameLabel.Location = new System.Drawing.Point(301, 107);
-            this.LogInFormUserNameLabel.Name = "LogInFormUserNameLabel";
-            this.LogInFormUserNameLabel.Size = new System.Drawing.Size(104, 22);
-            this.LogInFormUserNameLabel.TabIndex = 2;
-            this.LogInFormUserNameLabel.Text = "User Name:";
-            this.LogInFormUserNameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // LogInFormUserNameTextBox
-            // 
-            this.LogInFormUserNameTextBox.BackColor = System.Drawing.Color.Silver;
-            this.LogInFormUserNameTextBox.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.LogInFormUserNameTextBox.Location = new System.Drawing.Point(427, 107);
-            this.LogInFormUserNameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LogInFormUserNameTextBox.Name = "LogInFormUserNameTextBox";
-            this.LogInFormUserNameTextBox.Size = new System.Drawing.Size(176, 22);
-            this.LogInFormUserNameTextBox.TabIndex = 3;
-            this.LogInFormUserNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // LogInFormPassTxtBox
-            // 
-            this.LogInFormPassTxtBox.BackColor = System.Drawing.Color.Silver;
-            this.LogInFormPassTxtBox.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.LogInFormPassTxtBox.Location = new System.Drawing.Point(427, 164);
-            this.LogInFormPassTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LogInFormPassTxtBox.Multiline = true;
-            this.LogInFormPassTxtBox.Name = "LogInFormPassTxtBox";
-            this.LogInFormPassTxtBox.Size = new System.Drawing.Size(176, 22);
-            this.LogInFormPassTxtBox.TabIndex = 5;
-            // 
-            // LogInFormPassLabel
-            // 
-            this.LogInFormPassLabel.AutoSize = true;
-            this.LogInFormPassLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogInFormPassLabel.ForeColor = System.Drawing.Color.Gray;
-            this.LogInFormPassLabel.Location = new System.Drawing.Point(301, 163);
-            this.LogInFormPassLabel.Name = "LogInFormPassLabel";
-            this.LogInFormPassLabel.Size = new System.Drawing.Size(94, 22);
-            this.LogInFormPassLabel.TabIndex = 4;
-            this.LogInFormPassLabel.Text = "Password:";
-            this.LogInFormPassLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // LogInButton
-            // 
-            this.LogInButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LogInButton.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogInButton.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.LogInButton.Location = new System.Drawing.Point(305, 208);
-            this.LogInButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LogInButton.Name = "LogInButton";
-            this.LogInButton.Size = new System.Drawing.Size(298, 37);
-            this.LogInButton.TabIndex = 9;
-            this.LogInButton.Text = "Log In";
-            this.LogInButton.UseVisualStyleBackColor = false;
-            this.LogInButton.Click += new System.EventHandler(this.LogInButton_Click);
-            // 
-            // LogInFormPictureBox
-            // 
-            this.LogInFormPictureBox.BackgroundImage = global::US_Bangla_Airline_Management_App.Properties.Resources.LogoPic;
-            this.LogInFormPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogInFormPictureBox.Location = new System.Drawing.Point(739, -2);
-            this.LogInFormPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LogInFormPictureBox.Name = "LogInFormPictureBox";
-            this.LogInFormPictureBox.Size = new System.Drawing.Size(364, 94);
-            this.LogInFormPictureBox.TabIndex = 10;
-            this.LogInFormPictureBox.TabStop = false;
+            this.acc.AutoSize = true;
+            this.acc.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.acc.ForeColor = System.Drawing.Color.Gray;
+            this.acc.Location = new System.Drawing.Point(110, 280);
+            this.acc.Name = "acc";
+            this.acc.Size = new System.Drawing.Size(174, 20);
+            this.acc.TabIndex = 12;
+            this.acc.Text = "Don\'t Have An Account ?";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.button1.Location = new System.Drawing.Point(318, 329);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(185)))));
+            this.button1.Location = new System.Drawing.Point(102, 300);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(298, 36);
+            this.button1.Size = new System.Drawing.Size(192, 44);
             this.button1.TabIndex = 11;
             this.button1.Text = "Sign Up";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // acc
+            // LogInButton
             // 
-            this.acc.AutoSize = true;
-            this.acc.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.acc.ForeColor = System.Drawing.Color.Gray;
-            this.acc.Location = new System.Drawing.Point(378, 293);
-            this.acc.Name = "acc";
-            this.acc.Size = new System.Drawing.Size(161, 17);
-            this.acc.TabIndex = 12;
-            this.acc.Text = "Don\'t Have An Account ?";
-            this.acc.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LogInButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(185)))));
+            this.LogInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogInButton.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.LogInButton.ForeColor = System.Drawing.Color.White;
+            this.LogInButton.Location = new System.Drawing.Point(40, 235);
+            this.LogInButton.Name = "LogInButton";
+            this.LogInButton.Size = new System.Drawing.Size(340, 40);
+            this.LogInButton.TabIndex = 9;
+            this.LogInButton.Text = "Log In";
+            this.LogInButton.UseVisualStyleBackColor = false;
+            this.LogInButton.Click += new System.EventHandler(this.LogInButton_Click);
+            // 
+            // LogInFormPassTxtBox
+            // 
+            this.LogInFormPassTxtBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.LogInFormPassTxtBox.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.LogInFormPassTxtBox.Location = new System.Drawing.Point(40, 188);
+            this.LogInFormPassTxtBox.Name = "LogInFormPassTxtBox";
+            this.LogInFormPassTxtBox.Size = new System.Drawing.Size(340, 32);
+            this.LogInFormPassTxtBox.TabIndex = 5;
+            // 
+            // LogInFormPassLabel
+            // 
+            this.LogInFormPassLabel.AutoSize = true;
+            this.LogInFormPassLabel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.LogInFormPassLabel.ForeColor = System.Drawing.Color.Gray;
+            this.LogInFormPassLabel.Location = new System.Drawing.Point(40, 160);
+            this.LogInFormPassLabel.Name = "LogInFormPassLabel";
+            this.LogInFormPassLabel.Size = new System.Drawing.Size(97, 25);
+            this.LogInFormPassLabel.TabIndex = 4;
+            this.LogInFormPassLabel.Text = "Password";
+            // 
+            // LogInFormUserNameTextBox
+            // 
+            this.LogInFormUserNameTextBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.LogInFormUserNameTextBox.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.LogInFormUserNameTextBox.Location = new System.Drawing.Point(40, 118);
+            this.LogInFormUserNameTextBox.Name = "LogInFormUserNameTextBox";
+            this.LogInFormUserNameTextBox.Size = new System.Drawing.Size(340, 32);
+            this.LogInFormUserNameTextBox.TabIndex = 3;
+            this.LogInFormUserNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // LogInFormUserNameLabel
+            // 
+            this.LogInFormUserNameLabel.AutoSize = true;
+            this.LogInFormUserNameLabel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.LogInFormUserNameLabel.ForeColor = System.Drawing.Color.Gray;
+            this.LogInFormUserNameLabel.Location = new System.Drawing.Point(40, 90);
+            this.LogInFormUserNameLabel.Name = "LogInFormUserNameLabel";
+            this.LogInFormUserNameLabel.Size = new System.Drawing.Size(109, 25);
+            this.LogInFormUserNameLabel.TabIndex = 2;
+            this.LogInFormUserNameLabel.Text = "User Name";
+            // 
+            // LogInFormHeaderLabel
+            // 
+            this.LogInFormHeaderLabel.AutoSize = true;
+            this.LogInFormHeaderLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
+            this.LogInFormHeaderLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.LogInFormHeaderLabel.Location = new System.Drawing.Point(140, 20);
+            this.LogInFormHeaderLabel.Name = "LogInFormHeaderLabel";
+            this.LogInFormHeaderLabel.Size = new System.Drawing.Size(140, 54);
+            this.LogInFormHeaderLabel.TabIndex = 1;
+            this.LogInFormHeaderLabel.Text = "Log In";
+            // 
+            // LogInFormPictureBox
+            // 
+            this.LogInFormPictureBox.BackgroundImage = global::US_Bangla_Airline_Management_App.Properties.Resources.LogoPic;
+            this.LogInFormPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogInFormPictureBox.Location = new System.Drawing.Point(600, 30);
+            this.LogInFormPictureBox.Name = "LogInFormPictureBox";
+            this.LogInFormPictureBox.Size = new System.Drawing.Size(420, 140);
+            this.LogInFormPictureBox.TabIndex = 10;
+            this.LogInFormPictureBox.TabStop = false;
             // 
             // LogInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1103, 489);
-            this.Controls.Add(this.acc);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.LogInFormPictureBox);
-            this.Controls.Add(this.LogInButton);
-            this.Controls.Add(this.LogInFormPassTxtBox);
-            this.Controls.Add(this.LogInFormPassLabel);
-            this.Controls.Add(this.LogInFormUserNameTextBox);
-            this.Controls.Add(this.LogInFormUserNameLabel);
-            this.Controls.Add(this.LogInFormHeaderLabel);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Controls.Add(this.panelMain);
             this.Name = "LogInForm";
-            this.Text = "LogInForm";
+            this.Text = "Log In";
+            this.panelMain.ResumeLayout(false);
+            this.panelMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogInFormPictureBox)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Label LogInFormHeaderLabel;
         private System.Windows.Forms.Label LogInFormUserNameLabel;
         private System.Windows.Forms.TextBox LogInFormUserNameTextBox;

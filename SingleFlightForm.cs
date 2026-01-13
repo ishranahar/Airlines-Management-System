@@ -87,7 +87,9 @@ namespace US_Bangla_Airline_Management_App
             }
         }
 
-        private void SingleFlightFormBackBtn_Click(object sender, EventArgs e)
+   
+
+        private void SingleFlightFormBackBtn_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             AllFlights AF = new AllFlights();

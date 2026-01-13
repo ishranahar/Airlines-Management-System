@@ -1,5 +1,4 @@
-﻿
-namespace US_Bangla_Airline_Management_App
+﻿namespace US_Bangla_Airline_Management_App
 {
     partial class AllUsers
     {
@@ -52,45 +51,49 @@ namespace US_Bangla_Airline_Management_App
             // 
             // SelectUserBtn
             // 
+            this.SelectUserBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.SelectUserBtn.Location = new System.Drawing.Point(46, 332);
             this.SelectUserBtn.Name = "SelectUserBtn";
             this.SelectUserBtn.Size = new System.Drawing.Size(195, 72);
             this.SelectUserBtn.TabIndex = 1;
-            this.SelectUserBtn.Text = "Edit User";
-            this.SelectUserBtn.UseVisualStyleBackColor = true;
+            this.SelectUserBtn.Text = "Edit User ✏️";
+            this.SelectUserBtn.UseVisualStyleBackColor = false;
             this.SelectUserBtn.Click += new System.EventHandler(this.SelectUserBtn_Click);
             // 
             // AllUsersFormDeleteUserBtn
             // 
+            this.AllUsersFormDeleteUserBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.AllUsersFormDeleteUserBtn.Location = new System.Drawing.Point(305, 332);
             this.AllUsersFormDeleteUserBtn.Name = "AllUsersFormDeleteUserBtn";
             this.AllUsersFormDeleteUserBtn.Size = new System.Drawing.Size(218, 72);
             this.AllUsersFormDeleteUserBtn.TabIndex = 2;
-            this.AllUsersFormDeleteUserBtn.Text = "Delete User";
-            this.AllUsersFormDeleteUserBtn.UseVisualStyleBackColor = true;
+            this.AllUsersFormDeleteUserBtn.Text = "Delete User 🗑️";
+            this.AllUsersFormDeleteUserBtn.UseVisualStyleBackColor = false;
             this.AllUsersFormDeleteUserBtn.Click += new System.EventHandler(this.AllUsersFormDeleteUserBtn_Click);
             // 
             // AllUsersBackBtn
             // 
+            this.AllUsersBackBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.AllUsersBackBtn.Location = new System.Drawing.Point(570, 332);
             this.AllUsersBackBtn.Name = "AllUsersBackBtn";
             this.AllUsersBackBtn.Size = new System.Drawing.Size(218, 72);
             this.AllUsersBackBtn.TabIndex = 3;
-            this.AllUsersBackBtn.Text = "Back";
-            this.AllUsersBackBtn.UseVisualStyleBackColor = true;
+            this.AllUsersBackBtn.Text = "Back ⬅️";
+            this.AllUsersBackBtn.UseVisualStyleBackColor = false;
             this.AllUsersBackBtn.Click += new System.EventHandler(this.AllUsersBackBtn_Click);
             // 
             // AllUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.AllUsersBackBtn);
             this.Controls.Add(this.AllUsersFormDeleteUserBtn);
             this.Controls.Add(this.SelectUserBtn);
             this.Controls.Add(this.AllUsersTable);
             this.Name = "AllUsers";
-            this.Text = "AllUsers";
+            this.Text = "All Users 👥";
             ((System.ComponentModel.ISupportInitialize)(this.AllUsersTable)).EndInit();
             this.ResumeLayout(false);
 

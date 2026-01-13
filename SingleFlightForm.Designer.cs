@@ -1,17 +1,9 @@
-﻿
-namespace US_Bangla_Airline_Management_App
+﻿namespace US_Bangla_Airline_Management_App
 {
     partial class SingleFlightForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -23,234 +15,263 @@ namespace US_Bangla_Airline_Management_App
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.MainPanel = new System.Windows.Forms.Panel();
+            this.labelFlightID = new System.Windows.Forms.Label();
             this.SingleFlightFormFlightIDTxtBox = new System.Windows.Forms.TextBox();
+            this.labelDeparture = new System.Windows.Forms.Label();
             this.SingleFlightFormDepartureTxtBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelDestination = new System.Windows.Forms.Label();
             this.SingleFlightFormDestinationTxtBox = new System.Windows.Forms.TextBox();
+            this.labelDepartureTime = new System.Windows.Forms.Label();
             this.SingleFlightFormDepartureDateTime = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelArrivalTime = new System.Windows.Forms.Label();
             this.SingleFlightFormArrivalDateTime = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelTotalSeats = new System.Windows.Forms.Label();
             this.SingleFlightFormTotalSeatsTxtBox = new System.Windows.Forms.TextBox();
+            this.labelAircraftNo = new System.Windows.Forms.Label();
             this.SingleFlightFormAircraftNoTxtBox = new System.Windows.Forms.TextBox();
-            this.l = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelStatus = new System.Windows.Forms.Label();
             this.SingleFlightFormStatusCmbBox = new System.Windows.Forms.ComboBox();
             this.SingleFlightFormUpdateBtn = new System.Windows.Forms.Button();
             this.SingleFlightFormBackBtn = new System.Windows.Forms.Button();
+            this.MainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // MainPanel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Flight ID:";
+            this.MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
+            this.MainPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MainPanel.Controls.Add(this.labelFlightID);
+            this.MainPanel.Controls.Add(this.SingleFlightFormFlightIDTxtBox);
+            this.MainPanel.Controls.Add(this.labelDeparture);
+            this.MainPanel.Controls.Add(this.SingleFlightFormDepartureTxtBox);
+            this.MainPanel.Controls.Add(this.labelDestination);
+            this.MainPanel.Controls.Add(this.SingleFlightFormDestinationTxtBox);
+            this.MainPanel.Controls.Add(this.labelDepartureTime);
+            this.MainPanel.Controls.Add(this.SingleFlightFormDepartureDateTime);
+            this.MainPanel.Controls.Add(this.labelArrivalTime);
+            this.MainPanel.Controls.Add(this.SingleFlightFormArrivalDateTime);
+            this.MainPanel.Controls.Add(this.labelTotalSeats);
+            this.MainPanel.Controls.Add(this.SingleFlightFormTotalSeatsTxtBox);
+            this.MainPanel.Controls.Add(this.labelAircraftNo);
+            this.MainPanel.Controls.Add(this.SingleFlightFormAircraftNoTxtBox);
+            this.MainPanel.Controls.Add(this.labelStatus);
+            this.MainPanel.Controls.Add(this.SingleFlightFormStatusCmbBox);
+            this.MainPanel.Controls.Add(this.SingleFlightFormUpdateBtn);
+            this.MainPanel.Controls.Add(this.SingleFlightFormBackBtn);
+            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainPanel.Location = new System.Drawing.Point(0, 0);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(1149, 516);
+            this.MainPanel.TabIndex = 0;
+            // 
+            // labelFlightID
+            // 
+            this.labelFlightID.AutoSize = true;
+            this.labelFlightID.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelFlightID.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labelFlightID.Location = new System.Drawing.Point(50, 30);
+            this.labelFlightID.Name = "labelFlightID";
+            this.labelFlightID.Size = new System.Drawing.Size(73, 20);
+            this.labelFlightID.TabIndex = 0;
+            this.labelFlightID.Text = "Flight ID:";
             // 
             // SingleFlightFormFlightIDTxtBox
             // 
-            this.SingleFlightFormFlightIDTxtBox.Location = new System.Drawing.Point(208, 34);
+            this.SingleFlightFormFlightIDTxtBox.BackColor = System.Drawing.Color.White;
+            this.SingleFlightFormFlightIDTxtBox.Location = new System.Drawing.Point(200, 30);
             this.SingleFlightFormFlightIDTxtBox.Name = "SingleFlightFormFlightIDTxtBox";
-            this.SingleFlightFormFlightIDTxtBox.Size = new System.Drawing.Size(165, 22);
+            this.SingleFlightFormFlightIDTxtBox.Size = new System.Drawing.Size(160, 22);
             this.SingleFlightFormFlightIDTxtBox.TabIndex = 1;
+            // 
+            // labelDeparture
+            // 
+            this.labelDeparture.AutoSize = true;
+            this.labelDeparture.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelDeparture.ForeColor = System.Drawing.Color.DarkRed;
+            this.labelDeparture.Location = new System.Drawing.Point(50, 70);
+            this.labelDeparture.Name = "labelDeparture";
+            this.labelDeparture.Size = new System.Drawing.Size(84, 20);
+            this.labelDeparture.TabIndex = 2;
+            this.labelDeparture.Text = "Departure:";
             // 
             // SingleFlightFormDepartureTxtBox
             // 
-            this.SingleFlightFormDepartureTxtBox.Location = new System.Drawing.Point(208, 89);
+            this.SingleFlightFormDepartureTxtBox.Location = new System.Drawing.Point(200, 70);
             this.SingleFlightFormDepartureTxtBox.Name = "SingleFlightFormDepartureTxtBox";
-            this.SingleFlightFormDepartureTxtBox.Size = new System.Drawing.Size(165, 22);
-            this.SingleFlightFormDepartureTxtBox.TabIndex = 2;
+            this.SingleFlightFormDepartureTxtBox.Size = new System.Drawing.Size(160, 22);
+            this.SingleFlightFormDepartureTxtBox.TabIndex = 3;
             // 
-            // label2
+            // labelDestination
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(66, 94);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Departure:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(59, 141);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 17);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Destination:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.labelDestination.AutoSize = true;
+            this.labelDestination.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelDestination.ForeColor = System.Drawing.Color.DarkGreen;
+            this.labelDestination.Location = new System.Drawing.Point(50, 110);
+            this.labelDestination.Name = "labelDestination";
+            this.labelDestination.Size = new System.Drawing.Size(94, 20);
+            this.labelDestination.TabIndex = 4;
+            this.labelDestination.Text = "Destination:";
             // 
             // SingleFlightFormDestinationTxtBox
             // 
-            this.SingleFlightFormDestinationTxtBox.Location = new System.Drawing.Point(208, 141);
+            this.SingleFlightFormDestinationTxtBox.Location = new System.Drawing.Point(200, 110);
             this.SingleFlightFormDestinationTxtBox.Name = "SingleFlightFormDestinationTxtBox";
-            this.SingleFlightFormDestinationTxtBox.Size = new System.Drawing.Size(165, 22);
+            this.SingleFlightFormDestinationTxtBox.Size = new System.Drawing.Size(160, 22);
             this.SingleFlightFormDestinationTxtBox.TabIndex = 5;
+            // 
+            // labelDepartureTime
+            // 
+            this.labelDepartureTime.AutoSize = true;
+            this.labelDepartureTime.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelDepartureTime.ForeColor = System.Drawing.Color.MediumBlue;
+            this.labelDepartureTime.Location = new System.Drawing.Point(50, 150);
+            this.labelDepartureTime.Name = "labelDepartureTime";
+            this.labelDepartureTime.Size = new System.Drawing.Size(123, 20);
+            this.labelDepartureTime.TabIndex = 6;
+            this.labelDepartureTime.Text = "Departure Time:";
             // 
             // SingleFlightFormDepartureDateTime
             // 
-            this.SingleFlightFormDepartureDateTime.Location = new System.Drawing.Point(240, 194);
+            this.SingleFlightFormDepartureDateTime.Location = new System.Drawing.Point(200, 150);
             this.SingleFlightFormDepartureDateTime.Name = "SingleFlightFormDepartureDateTime";
-            this.SingleFlightFormDepartureDateTime.Size = new System.Drawing.Size(200, 22);
-            this.SingleFlightFormDepartureDateTime.TabIndex = 6;
+            this.SingleFlightFormDepartureDateTime.Size = new System.Drawing.Size(160, 22);
+            this.SingleFlightFormDepartureDateTime.TabIndex = 7;
             // 
-            // label4
+            // labelArrivalTime
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(74, 198);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 17);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Departure Time:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(77, 239);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 17);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Arraival Time:";
+            this.labelArrivalTime.AutoSize = true;
+            this.labelArrivalTime.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelArrivalTime.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.labelArrivalTime.Location = new System.Drawing.Point(50, 190);
+            this.labelArrivalTime.Name = "labelArrivalTime";
+            this.labelArrivalTime.Size = new System.Drawing.Size(99, 20);
+            this.labelArrivalTime.TabIndex = 8;
+            this.labelArrivalTime.Text = "Arrival Time:";
             // 
             // SingleFlightFormArrivalDateTime
             // 
-            this.SingleFlightFormArrivalDateTime.Location = new System.Drawing.Point(240, 239);
+            this.SingleFlightFormArrivalDateTime.Location = new System.Drawing.Point(200, 190);
             this.SingleFlightFormArrivalDateTime.Name = "SingleFlightFormArrivalDateTime";
-            this.SingleFlightFormArrivalDateTime.Size = new System.Drawing.Size(200, 22);
+            this.SingleFlightFormArrivalDateTime.Size = new System.Drawing.Size(160, 22);
             this.SingleFlightFormArrivalDateTime.TabIndex = 9;
             // 
-            // label6
+            // labelTotalSeats
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(78, 279);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 17);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Total Seats:";
+            this.labelTotalSeats.AutoSize = true;
+            this.labelTotalSeats.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelTotalSeats.ForeColor = System.Drawing.Color.OrangeRed;
+            this.labelTotalSeats.Location = new System.Drawing.Point(50, 230);
+            this.labelTotalSeats.Name = "labelTotalSeats";
+            this.labelTotalSeats.Size = new System.Drawing.Size(89, 20);
+            this.labelTotalSeats.TabIndex = 10;
+            this.labelTotalSeats.Text = "Total Seats:";
             // 
             // SingleFlightFormTotalSeatsTxtBox
             // 
-            this.SingleFlightFormTotalSeatsTxtBox.Location = new System.Drawing.Point(240, 279);
+            this.SingleFlightFormTotalSeatsTxtBox.Location = new System.Drawing.Point(200, 230);
             this.SingleFlightFormTotalSeatsTxtBox.Name = "SingleFlightFormTotalSeatsTxtBox";
-            this.SingleFlightFormTotalSeatsTxtBox.Size = new System.Drawing.Size(100, 22);
+            this.SingleFlightFormTotalSeatsTxtBox.Size = new System.Drawing.Size(120, 22);
             this.SingleFlightFormTotalSeatsTxtBox.TabIndex = 11;
+            // 
+            // labelAircraftNo
+            // 
+            this.labelAircraftNo.AutoSize = true;
+            this.labelAircraftNo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelAircraftNo.ForeColor = System.Drawing.Color.DarkCyan;
+            this.labelAircraftNo.Location = new System.Drawing.Point(50, 270);
+            this.labelAircraftNo.Name = "labelAircraftNo";
+            this.labelAircraftNo.Size = new System.Drawing.Size(92, 20);
+            this.labelAircraftNo.TabIndex = 12;
+            this.labelAircraftNo.Text = "Aircraft No:";
             // 
             // SingleFlightFormAircraftNoTxtBox
             // 
-            this.SingleFlightFormAircraftNoTxtBox.Location = new System.Drawing.Point(259, 324);
+            this.SingleFlightFormAircraftNoTxtBox.Location = new System.Drawing.Point(200, 270);
             this.SingleFlightFormAircraftNoTxtBox.Name = "SingleFlightFormAircraftNoTxtBox";
-            this.SingleFlightFormAircraftNoTxtBox.Size = new System.Drawing.Size(100, 22);
-            this.SingleFlightFormAircraftNoTxtBox.TabIndex = 12;
+            this.SingleFlightFormAircraftNoTxtBox.Size = new System.Drawing.Size(120, 22);
+            this.SingleFlightFormAircraftNoTxtBox.TabIndex = 13;
             // 
-            // l
+            // labelStatus
             // 
-            this.l.AutoSize = true;
-            this.l.Location = new System.Drawing.Point(73, 328);
-            this.l.Name = "l";
-            this.l.Size = new System.Drawing.Size(79, 17);
-            this.l.TabIndex = 13;
-            this.l.Text = "Aircraft No:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(80, 365);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 17);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Flight Status:";
+            this.labelStatus.AutoSize = true;
+            this.labelStatus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelStatus.ForeColor = System.Drawing.Color.Purple;
+            this.labelStatus.Location = new System.Drawing.Point(50, 310);
+            this.labelStatus.Name = "labelStatus";
+            this.labelStatus.Size = new System.Drawing.Size(101, 20);
+            this.labelStatus.TabIndex = 14;
+            this.labelStatus.Text = "Flight Status:";
             // 
             // SingleFlightFormStatusCmbBox
             // 
-            this.SingleFlightFormStatusCmbBox.FormattingEnabled = true;
             this.SingleFlightFormStatusCmbBox.Items.AddRange(new object[] {
             "Active",
             "Inactive"});
-            this.SingleFlightFormStatusCmbBox.Location = new System.Drawing.Point(240, 365);
+            this.SingleFlightFormStatusCmbBox.Location = new System.Drawing.Point(200, 310);
             this.SingleFlightFormStatusCmbBox.Name = "SingleFlightFormStatusCmbBox";
-            this.SingleFlightFormStatusCmbBox.Size = new System.Drawing.Size(121, 24);
+            this.SingleFlightFormStatusCmbBox.Size = new System.Drawing.Size(120, 24);
             this.SingleFlightFormStatusCmbBox.TabIndex = 15;
             // 
             // SingleFlightFormUpdateBtn
             // 
-            this.SingleFlightFormUpdateBtn.Location = new System.Drawing.Point(299, 409);
+            this.SingleFlightFormUpdateBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
+            this.SingleFlightFormUpdateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SingleFlightFormUpdateBtn.ForeColor = System.Drawing.Color.White;
+            this.SingleFlightFormUpdateBtn.Location = new System.Drawing.Point(200, 360);
             this.SingleFlightFormUpdateBtn.Name = "SingleFlightFormUpdateBtn";
-            this.SingleFlightFormUpdateBtn.Size = new System.Drawing.Size(176, 36);
+            this.SingleFlightFormUpdateBtn.Size = new System.Drawing.Size(120, 40);
             this.SingleFlightFormUpdateBtn.TabIndex = 16;
             this.SingleFlightFormUpdateBtn.Text = "Update";
-            this.SingleFlightFormUpdateBtn.UseVisualStyleBackColor = true;
-            this.SingleFlightFormUpdateBtn.Click += new System.EventHandler(this.SingleFlightFormUpdateBtn_Click);
+            this.SingleFlightFormUpdateBtn.UseVisualStyleBackColor = false;
             // 
             // SingleFlightFormBackBtn
             // 
-            this.SingleFlightFormBackBtn.Location = new System.Drawing.Point(582, 409);
+            this.SingleFlightFormBackBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.SingleFlightFormBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SingleFlightFormBackBtn.ForeColor = System.Drawing.Color.White;
+            this.SingleFlightFormBackBtn.Location = new System.Drawing.Point(360, 360);
             this.SingleFlightFormBackBtn.Name = "SingleFlightFormBackBtn";
-            this.SingleFlightFormBackBtn.Size = new System.Drawing.Size(176, 36);
+            this.SingleFlightFormBackBtn.Size = new System.Drawing.Size(120, 40);
             this.SingleFlightFormBackBtn.TabIndex = 17;
             this.SingleFlightFormBackBtn.Text = "Back";
-            this.SingleFlightFormBackBtn.UseVisualStyleBackColor = true;
-            this.SingleFlightFormBackBtn.Click += new System.EventHandler(this.SingleFlightFormBackBtn_Click);
+            this.SingleFlightFormBackBtn.UseVisualStyleBackColor = false;
+            this.SingleFlightFormBackBtn.Click += new System.EventHandler(this.SingleFlightFormBackBtn_Click_1);
             // 
             // SingleFlightForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(906, 472);
-            this.Controls.Add(this.SingleFlightFormBackBtn);
-            this.Controls.Add(this.SingleFlightFormUpdateBtn);
-            this.Controls.Add(this.SingleFlightFormStatusCmbBox);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.l);
-            this.Controls.Add(this.SingleFlightFormAircraftNoTxtBox);
-            this.Controls.Add(this.SingleFlightFormTotalSeatsTxtBox);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.SingleFlightFormArrivalDateTime);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.SingleFlightFormDepartureDateTime);
-            this.Controls.Add(this.SingleFlightFormDestinationTxtBox);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.SingleFlightFormDepartureTxtBox);
-            this.Controls.Add(this.SingleFlightFormFlightIDTxtBox);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1149, 516);
+            this.Controls.Add(this.MainPanel);
             this.Name = "SingleFlightForm";
-            this.Text = "SingleFlightForm";
+            this.MainPanel.ResumeLayout(false);
+            this.MainPanel.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel MainPanel;
+        private System.Windows.Forms.Label labelFlightID;
         private System.Windows.Forms.TextBox SingleFlightFormFlightIDTxtBox;
+        private System.Windows.Forms.Label labelDeparture;
         private System.Windows.Forms.TextBox SingleFlightFormDepartureTxtBox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelDestination;
         private System.Windows.Forms.TextBox SingleFlightFormDestinationTxtBox;
+        private System.Windows.Forms.Label labelDepartureTime;
         private System.Windows.Forms.DateTimePicker SingleFlightFormDepartureDateTime;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelArrivalTime;
         private System.Windows.Forms.DateTimePicker SingleFlightFormArrivalDateTime;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelTotalSeats;
         private System.Windows.Forms.TextBox SingleFlightFormTotalSeatsTxtBox;
+        private System.Windows.Forms.Label labelAircraftNo;
         private System.Windows.Forms.TextBox SingleFlightFormAircraftNoTxtBox;
-        private System.Windows.Forms.Label l;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelStatus;
         private System.Windows.Forms.ComboBox SingleFlightFormStatusCmbBox;
         private System.Windows.Forms.Button SingleFlightFormUpdateBtn;
         private System.Windows.Forms.Button SingleFlightFormBackBtn;
     }
 }
+

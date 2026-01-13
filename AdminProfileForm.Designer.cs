@@ -1,17 +1,10 @@
-﻿
-namespace US_Bangla_Airline_Management_App
+﻿namespace US_Bangla_Airline_Management_App
 {
     partial class AdminProfileForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Panel MainPanel;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -23,12 +16,9 @@ namespace US_Bangla_Airline_Management_App
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
+            this.MainPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.AdminProfileIDTxtBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,117 +29,141 @@ namespace US_Bangla_Airline_Management_App
             this.AdminProfileRoleCmbBox = new System.Windows.Forms.ComboBox();
             this.AdminProfileUpdateBtn = new System.Windows.Forms.Button();
             this.AdminProfileFormBackBtn = new System.Windows.Forms.Button();
+            this.MainPanel.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // MainPanel
+            // 
+            this.MainPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.MainPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MainPanel.Controls.Add(this.label1);
+            this.MainPanel.Controls.Add(this.AdminProfileIDTxtBox);
+            this.MainPanel.Controls.Add(this.label2);
+            this.MainPanel.Controls.Add(this.AdminProfileUserNameTxtBox);
+            this.MainPanel.Controls.Add(this.label3);
+            this.MainPanel.Controls.Add(this.AdminProfilePasswordTxtBox);
+            this.MainPanel.Controls.Add(this.label4);
+            this.MainPanel.Controls.Add(this.AdminProfileRoleCmbBox);
+            this.MainPanel.Controls.Add(this.AdminProfileUpdateBtn);
+            this.MainPanel.Controls.Add(this.AdminProfileFormBackBtn);
+            this.MainPanel.Location = new System.Drawing.Point(200, 60);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(400, 330);
+            this.MainPanel.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(95, 57);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Navy;
+            this.label1.Location = new System.Drawing.Point(40, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 17);
+            this.label1.Size = new System.Drawing.Size(73, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "User ID:";
             // 
             // AdminProfileIDTxtBox
             // 
-            this.AdminProfileIDTxtBox.Location = new System.Drawing.Point(207, 54);
+            this.AdminProfileIDTxtBox.BackColor = System.Drawing.Color.AliceBlue;
+            this.AdminProfileIDTxtBox.Location = new System.Drawing.Point(160, 30);
             this.AdminProfileIDTxtBox.Name = "AdminProfileIDTxtBox";
-            this.AdminProfileIDTxtBox.Size = new System.Drawing.Size(100, 22);
+            this.AdminProfileIDTxtBox.Size = new System.Drawing.Size(180, 22);
             this.AdminProfileIDTxtBox.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(95, 99);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.Navy;
+            this.label2.Location = new System.Drawing.Point(40, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 17);
+            this.label2.Size = new System.Drawing.Size(102, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "User Name:";
             // 
             // AdminProfileUserNameTxtBox
             // 
-            this.AdminProfileUserNameTxtBox.Location = new System.Drawing.Point(207, 99);
+            this.AdminProfileUserNameTxtBox.BackColor = System.Drawing.Color.AliceBlue;
+            this.AdminProfileUserNameTxtBox.Location = new System.Drawing.Point(160, 75);
             this.AdminProfileUserNameTxtBox.Name = "AdminProfileUserNameTxtBox";
-            this.AdminProfileUserNameTxtBox.Size = new System.Drawing.Size(100, 22);
+            this.AdminProfileUserNameTxtBox.Size = new System.Drawing.Size(180, 22);
             this.AdminProfileUserNameTxtBox.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(82, 149);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.Navy;
+            this.label3.Location = new System.Drawing.Point(40, 120);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 17);
+            this.label3.Size = new System.Drawing.Size(90, 23);
             this.label3.TabIndex = 4;
             this.label3.Text = "Password:";
             // 
             // AdminProfilePasswordTxtBox
             // 
-            this.AdminProfilePasswordTxtBox.Location = new System.Drawing.Point(207, 149);
+            this.AdminProfilePasswordTxtBox.BackColor = System.Drawing.Color.AliceBlue;
+            this.AdminProfilePasswordTxtBox.Location = new System.Drawing.Point(160, 120);
             this.AdminProfilePasswordTxtBox.Name = "AdminProfilePasswordTxtBox";
-            this.AdminProfilePasswordTxtBox.Size = new System.Drawing.Size(100, 22);
+            this.AdminProfilePasswordTxtBox.Size = new System.Drawing.Size(180, 22);
             this.AdminProfilePasswordTxtBox.TabIndex = 5;
+            this.AdminProfilePasswordTxtBox.UseSystemPasswordChar = true;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(81, 194);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.Navy;
+            this.label4.Location = new System.Drawing.Point(40, 165);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 17);
+            this.label4.Size = new System.Drawing.Size(50, 23);
             this.label4.TabIndex = 6;
             this.label4.Text = "Role:";
             // 
             // AdminProfileRoleCmbBox
             // 
-            this.AdminProfileRoleCmbBox.FormattingEnabled = true;
-            this.AdminProfileRoleCmbBox.Items.AddRange(new object[] {
-            "Admin",
-            "Customer",
-            "Counter Staff"});
-            this.AdminProfileRoleCmbBox.Location = new System.Drawing.Point(198, 194);
+            this.AdminProfileRoleCmbBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AdminProfileRoleCmbBox.Location = new System.Drawing.Point(160, 165);
             this.AdminProfileRoleCmbBox.Name = "AdminProfileRoleCmbBox";
-            this.AdminProfileRoleCmbBox.Size = new System.Drawing.Size(121, 24);
+            this.AdminProfileRoleCmbBox.Size = new System.Drawing.Size(180, 24);
             this.AdminProfileRoleCmbBox.TabIndex = 7;
             // 
             // AdminProfileUpdateBtn
             // 
-            this.AdminProfileUpdateBtn.Location = new System.Drawing.Point(160, 308);
+            this.AdminProfileUpdateBtn.BackColor = System.Drawing.Color.RoyalBlue;
+            this.AdminProfileUpdateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AdminProfileUpdateBtn.ForeColor = System.Drawing.Color.White;
+            this.AdminProfileUpdateBtn.Location = new System.Drawing.Point(40, 230);
             this.AdminProfileUpdateBtn.Name = "AdminProfileUpdateBtn";
-            this.AdminProfileUpdateBtn.Size = new System.Drawing.Size(159, 49);
+            this.AdminProfileUpdateBtn.Size = new System.Drawing.Size(140, 45);
             this.AdminProfileUpdateBtn.TabIndex = 8;
             this.AdminProfileUpdateBtn.Text = "Update Profile";
-            this.AdminProfileUpdateBtn.UseVisualStyleBackColor = true;
+            this.AdminProfileUpdateBtn.UseVisualStyleBackColor = false;
             this.AdminProfileUpdateBtn.Click += new System.EventHandler(this.AdminProfileUpdateBtn_Click);
             // 
             // AdminProfileFormBackBtn
             // 
-            this.AdminProfileFormBackBtn.Location = new System.Drawing.Point(449, 302);
+            this.AdminProfileFormBackBtn.BackColor = System.Drawing.Color.Firebrick;
+            this.AdminProfileFormBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AdminProfileFormBackBtn.ForeColor = System.Drawing.Color.White;
+            this.AdminProfileFormBackBtn.Location = new System.Drawing.Point(200, 230);
             this.AdminProfileFormBackBtn.Name = "AdminProfileFormBackBtn";
-            this.AdminProfileFormBackBtn.Size = new System.Drawing.Size(149, 60);
+            this.AdminProfileFormBackBtn.Size = new System.Drawing.Size(140, 45);
             this.AdminProfileFormBackBtn.TabIndex = 9;
-            this.AdminProfileFormBackBtn.Text = "Back ";
-            this.AdminProfileFormBackBtn.UseVisualStyleBackColor = true;
+            this.AdminProfileFormBackBtn.Text = "Back";
+            this.AdminProfileFormBackBtn.UseVisualStyleBackColor = false;
             this.AdminProfileFormBackBtn.Click += new System.EventHandler(this.AdminProfileFormBackBtn_click);
             // 
             // AdminProfileForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.AdminProfileFormBackBtn);
-            this.Controls.Add(this.AdminProfileUpdateBtn);
-            this.Controls.Add(this.AdminProfileRoleCmbBox);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.AdminProfilePasswordTxtBox);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.AdminProfileUserNameTxtBox);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.AdminProfileIDTxtBox);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.MainPanel);
             this.Name = "AdminProfileForm";
-            this.Text = "AdminProfileForm";
+            this.Text = "Admin Profile";
+            this.MainPanel.ResumeLayout(false);
+            this.MainPanel.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
-
         }
 
         #endregion
@@ -166,3 +180,4 @@ namespace US_Bangla_Airline_Management_App
         private System.Windows.Forms.Button AdminProfileFormBackBtn;
     }
 }
+
