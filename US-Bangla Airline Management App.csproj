@@ -76,6 +76,24 @@
     <Compile Include="AllUsers.Designer.cs">
       <DependentUpon>AllUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="AvailableFlight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvailableFlight.Designer.cs">
+      <DependentUpon>AvailableFlight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingForm.Designer.cs">
+      <DependentUpon>BookingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDashboard.Designer.cs">
+      <DependentUpon>CustomerDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="DbConfig.cs" />
     <Compile Include="Flight.cs" />
     <Compile Include="LoggedInUser.cs" />
@@ -120,6 +138,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllUsers.resx">
       <DependentUpon>AllUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvailableFlight.resx">
+      <DependentUpon>AvailableFlight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingForm.resx">
+      <DependentUpon>BookingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDashboard.resx">
+      <DependentUpon>CustomerDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>

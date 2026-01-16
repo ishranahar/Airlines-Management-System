@@ -75,8 +75,8 @@ namespace US_Bangla_Airline_Management_App
             }
             else if (role == "customer")
             {
-                MessageBox.Show("Customer Dashboard not implemented yet");
-                // new CustomerDashboard().Show();
+              
+                new CustomerDashboard().Show();
             }
             else if (role == "counterstaff")
             {
